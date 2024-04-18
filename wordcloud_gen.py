@@ -1,6 +1,6 @@
-import os
+'''import os
 script_directory = os.path.dirname(os.path.abspath(__file__))
-os.chdir(script_directory)
+os.chdir(script_directory)'''
 
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
@@ -8,7 +8,7 @@ from PyPDF2 import PdfReader as pdf
 import contractions
 
 # for .pdf file type
-file = open("C://Users//ASUS//Downloads//Movie Screening Survey (Responses) - Form Responses 2.pdf", "rb")
+file = open("file path", "rb") # if it gives some unicode error, convert \ to //
 pdf_read = pdf(file)
 
 text = ""
